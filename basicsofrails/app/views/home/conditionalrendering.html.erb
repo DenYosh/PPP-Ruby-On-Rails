@@ -1,0 +1,77 @@
+
+<table class="table">
+    <tr>
+        <td>Name</td>
+        <td>Is Visible</td>
+        <td>Is Logged In?</td>
+        <td>Country Code</td>
+        <td>Work Experience</td>
+        <td>State Code</td>
+    </tr>
+    <tr>
+        <td> <%= @data[:name] %></td>
+        <td> <%= @data[:isVisible] %></td>
+        <td> <%= @data[:loggedIn] %></td>
+        <td> <%= @data[:countryCode] %></td>
+        <td> <%= @data[:workExperience] %></td>
+        <td> <%= @data[:stateCode] %></td>
+    </tr>
+
+</table>
+
+
+<% if @data[:loggedIn] %>
+    <h1> Hi <%= @data[:name]%>! You are logged in Currently!</h1>
+<% else %>
+    <h1>  Hi <%= @data[:name]%>! You are just a guest! please login!! </h1>
+<% end %>
+
+<% if @data[:loggedIn] === true %>
+    <h1> Hi <%= @data[:name]%>! You are logged in Currently!</h1>
+<% else %>
+    <h1>  Hi <%= @data[:name]%>! You are just a guest! please login!! </h1>
+<% end %>
+
+<% if @data[:name] == "Jimmy Anderson" %>
+    <h1> Hi <%= @data[:name]%>! You are an Elite Player!</h1>
+<% else %>
+    <h1>  Hi <%= @data[:name]%>! You are not an Elite Player Yet! </h1>
+<% end %>
+
+<% if @data[:name] != "Jimmy Anderson" %>
+    <h1> Hi <%= @data[:name]%>! You are an Elite Player!</h1>
+<% else %>
+    <h1>  Hi <%= @data[:name]%>! You are not an Elite Player Yet! </h1>
+<% end %>
+
+
+<% if @data[:countryCode] == "US" %>
+    <h1>Currency Code is USD</h1>
+<% elsif @data[:countryCode] == "UK"%>
+    <h1>Currency Code is GBP</h1>
+<% elsif @data[:countryCode] == "IND"%>
+    <h1>Currency Code is INR</h1>
+<% elsif @data[:countryCode] == "AUS"%>
+    <h1>Currency Code is AUD</h1>
+<% else %>
+    <h1>Invalid Country Code! </h1>
+<% end %>
+
+<% if @data[:workExperience] > 30 and @data[:workExperience] < 50 %>
+    <h1>You are eligible for the post of CEO</h1>
+<% else %>
+    <h1>You Still Have to wait! </h1>
+<% end %>
+
+<% if @data[:countryCode] == "IND" or @data[:countryCode] == "US" %>
+    <h1>Job market is doing good!</h1>
+<% else %>
+    <h1>Job Market has to still improve! </h1>
+<% end %>
+
+<% if @data[:stateCode] == nil %>
+<h1>Please supply a value for State Code </h1>
+<% else %>
+<h1> <%= @data[:stateCode] %></h1>
+<% end %>
+

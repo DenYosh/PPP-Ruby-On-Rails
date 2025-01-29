@@ -1,0 +1,14 @@
+
+:queues:
+  - critical
+  - default
+  - mailers
+
+tasks: &tasks
+  UpdateUsersJob:
+    cron: "*/5 * * * *" # Run every 5 minutes
+    queue: default
+    description: "Update User profile"
+:scheduler:
+  :schedule:
+    <<: *tasks

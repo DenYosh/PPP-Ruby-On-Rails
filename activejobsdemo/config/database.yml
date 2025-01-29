@@ -1,0 +1,19 @@
+default: &default
+  adapter: sqlserver
+  host: localhost
+  port: 1433
+  database: dbrailsnew3
+  username: sa
+  password: sa
+  encoding: utf8
+     
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: dbrailsnew3
+
+production:
+  <<: *default

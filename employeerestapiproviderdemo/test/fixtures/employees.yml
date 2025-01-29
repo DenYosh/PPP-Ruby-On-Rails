@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firstname: MyString
+  lastname: MyString
+  haspassport: false
+  salary: 1
+  birthdate: 2024-03-19
+  hiredate: 2024-03-19
+  gender: MyString
+  notes: MyString
+  email: MyString
+  phone: MyString
+  country: one
+  department: one
+
+two:
+  firstname: MyString
+  lastname: MyString
+  haspassport: false
+  salary: 1
+  birthdate: 2024-03-19
+  hiredate: 2024-03-19
+  gender: MyString
+  notes: MyString
+  email: MyString
+  phone: MyString
+  country: two
+  department: two
