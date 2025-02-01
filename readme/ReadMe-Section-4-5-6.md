@@ -31,3 +31,9 @@ Data debuggen door de Gem debugger te gebruiken in de console.
 Data debuggen in de web console debugger.
 
 ![](../images/hello-world-10.png)
+
+## 6. Logging
+
+Loggen van data of berichten met log levels.
+
+![](../images/logging-1.png)
