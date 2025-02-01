@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-
     def index
         # render plain: "Hello World From Rails 8, Yoshi Cooremans!"
 
@@ -17,10 +16,10 @@ class HomeController < ApplicationController
 
     def getQueryStringValues
         message = ""
-        
+
         if params[:message]
             message += "<h1>Message is: #{params[:message]}</h1>"
-            else
+        else
                 message += "<h1>No message received</h1>"
         end
 
@@ -47,5 +46,28 @@ class HomeController < ApplicationController
 
     def showDateTimeInfo
         @currenttime = DateTime.now
+    end
+
+    def conditionalRendering
+        @data =  {
+            name: "Yoshi Cooremans",
+            age: 20,
+            isVisible: true,
+            loggedIn: false,
+            countryCode: "BE",
+            workExperience: 2,
+            stateCode: nil
+
+        }
+    end
+
+    def loopThroughArrays
+        @Products = []
+        console
+        @Products.push({ productId: 1, productName: "Product 1", quantity: 100, unitsInStock: 50, disContinued: false, cost: 3000 })
+        @Products.push({ productId: 2, productName: "Product 2", quantity: 200, unitsInStock: 100, disContinued: true, cost: 4000 })
+        @Products.push({ productId: 3, productName: "Product 3", quantity: 300, unitsInStock: 150, disContinued: false, cost: 5000 })
+        @Products.push({ productId: 4, productName: "Product 4", quantity: 400, unitsInStock: 200, disContinued: true, cost: 6000 })
+        @Products.push({ productId: 5, productName: "Product 5", quantity: 500, unitsInStock: 250, disContinued: false, cost: 7000 })
     end
 end

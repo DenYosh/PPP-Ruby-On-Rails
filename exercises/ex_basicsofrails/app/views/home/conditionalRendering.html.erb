@@ -1,0 +1,58 @@
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Is Visible</th>
+        <th>Is Logged in</th>
+        <th>Country Code</th>
+        <th>Work Experience</th>
+        <th>State code</th>
+    </tr>
+    <tr>
+        <td><%= @data[:name] %></td>
+        <td><%= @data[:age] %></td>
+        <td><%= @data[:isVisible] %></td>
+        <td><%= @data[:loggedIn] %></td>
+        <td><%= @data[:countryCode] %></td>
+        <td><%= @data[:workExperience] %></td>
+        <td><%= @data[:stateCode] %></td>
+    </tr>
+</table>
+
+<% if @data[:loggedIn]%>
+    <h1>Welcome <%= @data[:name] %>, you are logged in</h1>
+<% else %>
+    <h1>Welcome <%= @data[:name] %>, please log in!</h1>
+
+<% end %>
+
+<% if @data[:name] === "Yoshi Cooremans" %>
+    <h1>Welcome <%= @data[:name] %>, you are an legend!</h1>
+<% else %>
+    <h1>Welcome <%= @data[:name] %>, you are not an legend yet!</h1>
+
+<% end %>
+
+<% if @data[:age] > 18 %>
+    <h1>Welcome <%= @data[:name] %>, you are an adult!</h1>
+<% else %>
+    <h1>Welcome <%= @data[:name] %>, you are not an adult yet!</h1>
+<% end %>
+
+<% if @data[:isVisible] %>
+    <h1>Welcome <%= @data[:name] %>, you are visible!</h1>
+<% else %>
+    <h1>Welcome <%= @data[:name] %>, you are not visible!</h1>
+<% end %>
+
+<% if @data[:countryCode] === "BE" %>
+    <h1>You are from Belgium!</h1>
+<% else %>
+    <h1>You are not from Belgium!</h1>
+<% end %>
+
+<% if @data[:workExperience] > 5 %>
+    <h1>You have more than 5 years of work experience!</h1>
+<% else %>
+    <h1>You have less than 5 years of work experience!</h1>
+<% end %>

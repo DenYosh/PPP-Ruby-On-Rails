@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   get "home/getquerystringvalues" => "home#getQueryStringValues"
   get "home/passdatatoviews" => "home#passDataToViews"
   get "home/showdatetimeinfo" => "home#showDateTimeInfo"
+  get "home/conditionalrendering" => "home#conditionalRendering"
+  get "home/loopingthrougharray" => "home#loopThroughArrays"
 end
