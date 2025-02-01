@@ -70,4 +70,40 @@ class HomeController < ApplicationController
         @Products.push({ productId: 4, productName: "Product 4", quantity: 400, unitsInStock: 200, disContinued: true, cost: 6000 })
         @Products.push({ productId: 5, productName: "Product 5", quantity: 500, unitsInStock: 250, disContinued: false, cost: 7000 })
     end
+
+    def LoadUsers
+        base_url = "https://fakestoreapi.com/users"
+        @users = CallRestAPI(base_url)
+    end
+
+    def CallRestAPI(base_url)
+        response = HTTParty.get(base_url)
+        response.success? ? response.parsed_response : []
+    end
+
+    def LoadUsers2
+        base_url = "https://fakestoreapi.com/users"
+        @image = "https://i.pravatar.cc"
+        @users = CallRestAPI(base_url)
+    end
+
+    def ShowUserDetails
+      redirect_to LoadUserDetails_path(1)
+    end
+
+    def LoadUsersDetails
+        id = params[:id].to_i
+
+        if id <1 || id > 10
+          redirect_to LoadUserDetails_path(1)
+          return
+        end
+
+        response = HTTParty.get("https://fakestoreapi.com/users/#{id}")
+        if response.success?
+            @user = response.parsed_response
+        else
+            @user = nil
+        end
+    end
 end
