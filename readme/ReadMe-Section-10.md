@@ -32,3 +32,41 @@ Mezelf toegevoegd.
 ## 3. Data inladen via Rails
 
 ![](../images/crud-3.png)
+
+## 4. Show employee
+
+Bekijk de data van een employee in detail
+
+![](../images/crud-4.png)
+
+## 5. Edit employee
+
+Om een employee te editen kun je dit formulier gebruiken
+
+![](../images/crud-5.png)
+
+Zoals je ziet is er een nieuwe note toegevoegd.
+
+![](../images/crud-6.png)
+
+## 6. Insert employee
+
+Nieuwe employee toevoegen
+
+![](../images/crud-7.png)
+
+Uitkomst:
+
+![](../images/crud-8.png)
+
+## 7. Delete employee
+
+Employee verwijderen
+
+Pagina om te verwijderen
+
+![](../images/crud-9.png)
+
+Verwijderd:
+
+![](../images/crud-10.png)
