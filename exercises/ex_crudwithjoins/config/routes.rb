@@ -22,4 +22,16 @@ Rails.application.routes.draw do
   post "employees" => "employees#create"
 
   resources :users
+
+  resources :singleemployeedelete, only: [ :index ] do
+    delete "emp_delete", on: :collection
+  end
+
+  resources :bulkdeleteemployees, only: [ :index ] do
+    delete "bulk_delete", on: :collection
+  end
+
+  resources :bulkupdates, only: [ :index ] do
+    patch "bulk_update", on: :collection
+  end
 end
