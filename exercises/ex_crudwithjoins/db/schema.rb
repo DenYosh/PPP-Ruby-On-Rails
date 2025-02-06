@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_06_121723) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_06_182439) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -49,6 +49,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_06_121723) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "cities", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "state_id", null: false
+    t.index ["state_id"], name: "index_cities_on_state_id"
+  end
+
   create_table "countries", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -80,6 +88,27 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_06_121723) do
     t.index ["department_id"], name: "index_employees_on_department_id"
   end
 
+  create_table "offshoreemployees", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "country_id", null: false
+    t.integer "state_id", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id"], name: "index_offshoreemployees_on_city_id"
+    t.index ["country_id"], name: "index_offshoreemployees_on_country_id"
+    t.index ["state_id"], name: "index_offshoreemployees_on_state_id"
+  end
+
+  create_table "states", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "country_id", null: false
+    t.index ["country_id"], name: "index_states_on_country_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "password_digest"
@@ -98,6 +127,11 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_06_121723) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "cities", "states"
   add_foreign_key "employees", "countries"
   add_foreign_key "employees", "departments"
+  add_foreign_key "offshoreemployees", "cities"
+  add_foreign_key "offshoreemployees", "countries"
+  add_foreign_key "offshoreemployees", "states"
+  add_foreign_key "states", "countries"
 end
