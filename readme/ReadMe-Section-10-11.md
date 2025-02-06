@@ -1,3 +1,7 @@
+---
+[⬅️ Vorige](./ReadMe-Section-7-8-9.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-12-13.md)
+---
+
 # Sectie 10
 
 ## 1. Aanmaken van een table
@@ -70,3 +74,13 @@ Pagina om te verwijderen
 Verwijderd:
 
 ![](../images/crud-10.png)
+
+# Sectie 11
+
+## 1. Rich Text Editor
+
+Een rich text editor voor de notes van een employee.
+
+![](../images/crud-11.png)
+
+![](../images/crud-12.png)

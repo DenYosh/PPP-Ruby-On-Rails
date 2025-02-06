@@ -1,3 +1,7 @@
+---
+[⬅️ Vorige](./ReadMe-Section-4-5-6.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-10-11.md)
+---
+
 # Sectie 7 + 8 + 9
 
 ## 1. Data inladen van een RESTAPI

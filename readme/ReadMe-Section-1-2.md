@@ -1,3 +1,7 @@
+---
+[⬅️ Vorige](../ReadMe.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-3.md)
+---
+
 # ReadMe - Sectie 1 & 2
 
 ## Sectie 1: Installeren van Ruby

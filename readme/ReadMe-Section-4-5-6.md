@@ -1,3 +1,7 @@
+---
+[⬅️ Vorige](./ReadMe-Section-3.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-7-8-9.md)
+---
+
 # Sectie 4 en 5
 
 ## 1. Van de Controller naar de View met objects
