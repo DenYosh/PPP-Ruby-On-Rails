@@ -1,0 +1,19 @@
+
+<div>
+    <h1>Bulk Insert Employees</h1> 
+    <%= form_with(url: bulkinserts_path, method: :post) do |form| %>
+        <div data-controller="bulkinserts">
+            <div data-target="bulkinserts.container">
+            </div>
+
+            <template data-bulkinserts-target="template">
+                <div>
+                    <%= render partial: 'employee_fields', locals: { f: form } %>
+                </div>
+            </template>
+            <button type="button" data-action="click->bulkinserts#addEmployee" 
+            class="btn btn-success">Add Row</button>
+        </div>
+    <%= form.submit "Bulk Insert Employees", class: "btn btn-primary my-5"%>
+    <% end %>
+</div>
