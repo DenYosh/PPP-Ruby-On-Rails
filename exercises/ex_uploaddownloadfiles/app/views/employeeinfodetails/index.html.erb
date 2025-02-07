@@ -1,0 +1,36 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="text-center mt-4 mb-4">
+				<h1>Add Files | Employee Information | Yoshi Cooremans</h1>
+			</div>
+			<%= link_to 'Create', new_employeeinfodetail_path, class: "btn btn-primary mt-4 mb-1" %>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">First Name</th>
+						<th scope="col">Last Name</th>
+						<th scope="col">Actions/Operations</th>
+			    	</tr>
+			  	</thead>
+			  	<tbody>
+			  		<% @employees.each do |emp| %>
+				    	<tr>
+							<th scope="row"><%= emp.id %></th>
+							<td><%= emp.firstname %></td>
+							<td><%= emp.lastname %></td>
+							<td><%= link_to 'Details', employeeinfodetail_path(emp) %></td>
+				    	</tr>
+				    <% end %>
+				    <% unless @employees.present? %>
+				    	<tr>
+				    		<td colspan="4" class="text-center">No Data Found</td>
+				    	</tr>
+				    <% end %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

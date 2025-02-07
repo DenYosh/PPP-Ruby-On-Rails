@@ -28,6 +28,7 @@ Welkom bij **Mastering Ruby on Rails**! Dit project bevat verschillende modules 
 -   🔗 [Model Relaties - 12 + 13](./readme/ReadMe-Section-12-13.md)
 -   📊 [Bulk CRUD - 15 + 16 + 17](./readme/ReadMe-Section-15-16-17.md)
 -   🔢 [Input Fields Calculation - 21 + 22 + 23](./readme/ReadMe-Section-21-22-23.md)
+-   💳 [Transaction - 26](./readme/ReadMe-Section-26.md)
 
 ### 🛒 **Geavanceerde Functionaliteiten**
 
@@ -45,6 +46,12 @@ Hieronder een overzicht van de tijd besteed aan dit project:
 ![WakaTime](./images/wakatime-stats.png)
 
 ---
+
+## 📜 Certificaat van voltooing:
+
+Hieronder het certificaat van het voltooien van deze cursus:
+
+![Certificaat](./images/certificaat.png)
 
 ## 🎓 Credits
 

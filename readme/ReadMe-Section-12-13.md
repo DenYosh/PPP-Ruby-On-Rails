@@ -2,7 +2,9 @@
 [⬅️ Vorige](./ReadMe-Section-10-11.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-14.md)
 ---
 
-# Sectie 12
+# Sectie 12 + 13
+
+# Sectie 12 | Joins
 
 ## 1. Aanmaken van nieuwe modellen
 
@@ -91,7 +93,7 @@ Dit kun je doen door de juiste relaties te zetten in de models.
 
 ![](../images/joins-4.png)
 
-# Sectie 13
+# Sectie 13 | Validations
 
 ## 1. Validaties opzetten
 

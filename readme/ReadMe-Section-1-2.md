@@ -2,9 +2,11 @@
 [⬅️ Vorige](../ReadMe.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-3.md)
 ---
 
-# ReadMe - Sectie 1 & 2
+# Sectie 1 + 2
 
-## Sectie 1: Installeren van Ruby
+# Sectie 1 | Installeren van Ruby
+
+## 1. Instaleren Ruby
 
 Voor het installeren heb ik deze stappen gevolgd.
 
@@ -16,7 +18,9 @@ Voor het installeren heb ik deze stappen gevolgd.
 ruby -v
 ```
 
-## Sectie 2: Installeren van Rails
+# Sectie 2 | Installeren van Rails
+
+## 1. Instaleren Rails
 
 Na het installeren van Ruby heb ik Rails geïnstalleerd door deze stappen uit te voeren:
 
@@ -33,7 +37,7 @@ gem install rails
 rails -v
 ```
 
-## Samenvatting: Wat is MVC?
+## 2. Samenvatting: Wat is MVC?
 
 MVC staat voor Model-View-Controller, een ontwerp patroon gebruikt in webontwikkeling:
 Door het gebruik van het MVC-patroon kunnen we een duidelijke scheiding van verantwoordelijkheden bereiken, waardoor onze code modulaire, onderhoudbaar en schaalbaar wordt.

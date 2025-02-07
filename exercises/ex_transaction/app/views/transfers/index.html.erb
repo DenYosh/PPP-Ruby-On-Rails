@@ -1,0 +1,38 @@
+
+<div>
+  <h1>Listing Transfers | Yoshi Cooremans</h1>
+
+  <p><a href="<%= new_transfer_path %>">New Transfer</a></p>
+
+  <% if @transfers.present? %>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>From Account</th>
+          <th>To Account</th>
+          <th>Transfer Amount</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @transfers.each do |transfer| %>
+          <tr>
+            <td><%= transfer.id %></td>
+            <td>
+              <%= transfer.from_account.name %>
+              <p>Balance After Transfer: <%= transfer.from_account.balance %></p>
+            </td>
+            <td>
+              <%= transfer.to_account.name %>
+              <p>Balance After Transfer: <%= transfer.to_account.balance %></p>
+            </td>
+            <td><%= transfer.amount %></td>
+            <td></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</div>

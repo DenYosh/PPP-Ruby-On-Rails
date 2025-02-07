@@ -2,7 +2,9 @@
 [⬅️ Vorige](./ReadMe-Section-20.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-24.md)
 ---
 
-# Section 21
+# Sectie 21 + 22 + 23
+
+# Section 21 | Radio buttons
 
 # 1. Aanmaken van de tables en relaties:
 
@@ -48,7 +50,7 @@ De data wordt ook opgeslagen in de db.
 
 ![](../images/input-3.png)
 
-# Sectie 22
+# Sectie 22 | Checkboxes
 
 ## 1. Layout voor de checkboxes
 
@@ -62,7 +64,7 @@ De data wordt ook opgeslagen in de db.
 
 ![](../images/input-6.png)
 
-# Sectie 23
+# Sectie 23 | ListBoxes
 
 ## 1. Layout voor de views voor ListBoxes
 

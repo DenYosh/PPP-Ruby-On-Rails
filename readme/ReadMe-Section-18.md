@@ -2,7 +2,7 @@
 [⬅️ Vorige](./ReadMe-Section-15-16-17.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-19.md)
 ---
 
-# Sectie 18
+# Sectie 18 | Dropdown lists
 
 ## 1. Models en Foreign keys klaarmaken
 

@@ -2,7 +2,9 @@
 [⬅️ Vorige](./ReadMe-Section-7-8-9.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-12-13.md)
 ---
 
-# Sectie 10
+# Sectie 10 + 11
+
+# Sectie 10 | CRUD
 
 ## 1. Aanmaken van een table
 
@@ -75,7 +77,7 @@ Verwijderd:
 
 ![](../images/crud-10.png)
 
-# Sectie 11
+# Sectie 11 | Rich Text editor
 
 ## 1. Rich Text Editor
 

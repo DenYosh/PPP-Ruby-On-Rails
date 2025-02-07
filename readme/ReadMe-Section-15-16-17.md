@@ -2,7 +2,9 @@
 [⬅️ Vorige](./ReadMe-Section-14.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-18.md)
 ---
 
-# Sectie 15
+# Sectie 15 + 16 + 17
+
+# Sectie 15 | Bulk Delete
 
 # 1. Rij verwijderen via een radio button
 
@@ -24,7 +26,7 @@ Lijst met verwijderde
 
 ![](../images/bulk-4.png)
 
-# Sectie 16
+# Sectie 16 | Bulk update
 
 ## 1. Bulk update van data
 
@@ -40,7 +42,7 @@ Opslaan van wijzigingen
 
 ![](../images/bulk-7.png)
 
-# Sectie 17
+# Sectie 17 | Bulk insert
 
 ## 1. Bulk insert van data
 

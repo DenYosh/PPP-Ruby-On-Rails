@@ -2,7 +2,7 @@
 [⬅️ Vorige](./ReadMe-Section-18.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-20.md)
 ---
 
-# Sectie 19
+# Sectie 19 | Shoppingcart
 
 ## 1. Basis layout van de shoppingcart
 

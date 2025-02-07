@@ -2,7 +2,7 @@
 [⬅️ Vorige](./ReadMe-Section-24.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-26.md)
 ---
 
-# Sectie 25
+# Sectie 25 | Model callbacks
 
 ## 1. Callbacks na aanmaken model
 

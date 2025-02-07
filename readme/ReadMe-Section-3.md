@@ -2,7 +2,7 @@
 [⬅️ Vorige](./ReadMe-Section-1-2.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-4-5-6.md)
 ---
 
-# Sectie 2
+# Sectie 3 | Default Rails
 
 ## 1. Van de Controller naar de View met Plain Tekst
 

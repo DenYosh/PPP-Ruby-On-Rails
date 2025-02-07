@@ -2,7 +2,7 @@
 [⬅️ Vorige](./ReadMe-Section-21-22-23.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-25.md)
 ---
 
-# Sectie 24
+# Sectie 24 | Filtering
 
 ## 1. Filtering met where clause
 

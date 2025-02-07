@@ -2,7 +2,7 @@
 [⬅️ Vorige](./ReadMe-Section-12-13.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-15-16-17.md)
 ---
 
-# Sectie 14
+# Sectie 14 | Migrations
 
 ## 1. Migrations maken voor Add, Remove, Change Columns & Foreign Keys
 
