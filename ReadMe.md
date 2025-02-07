@@ -27,11 +27,14 @@ Welkom bij **Mastering Ruby on Rails**! Dit project bevat verschillende modules 
 -   ✏️ [CRUD - 10 + 11](./readme/ReadMe-Section-10-11.md)
 -   🔗 [Model Relaties - 12 + 13](./readme/ReadMe-Section-12-13.md)
 -   📊 [Bulk CRUD - 15 + 16 + 17](./readme/ReadMe-Section-15-16-17.md)
+-   🔢 [Input Fields Calculation - 21 + 22 + 23](./readme/ReadMe-Section-21-22-23.md)
 
 ### 🛒 **Geavanceerde Functionaliteiten**
 
 -   🛍️ [Shoppingcart - 19](./readme/ReadMe-Section-19.md)
 -   📑 [Pagination - 20](./readme/ReadMe-Section-20.md)
+-   🔎 [Filtering - 24](./readme/ReadMe-Section-24.md)
+-   ⚙️ [Callbacks on Model - 25](./readme/ReadMe-Section-25.md)
 
 ---
 

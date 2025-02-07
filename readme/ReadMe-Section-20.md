@@ -1,5 +1,5 @@
 ---
-[⬅️ Vorige](./ReadMe-Section-19.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-21.md)
+[⬅️ Vorige](./ReadMe-Section-19.md) • [🏠 Terug naar Hoofdpagina](../ReadMe.md) • [Volgende ➡️](./ReadMe-Section-21-22-23.md)
 ---
 
 # Sectie 20
