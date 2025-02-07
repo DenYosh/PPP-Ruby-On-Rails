@@ -43,4 +43,13 @@ Rails.application.routes.draw do
   get "/locations/cities" => "locations#cities"
 
   resources :employeespaginations, only: [ :index ]
+
+  get "radio_index", to: "allowances#radio_index"
+  post "radio_create", to: "allowances#radio_create"
+
+  get "check_box_index", to: "allowances#check_box_index"
+  post "check_box_create", to: "allowances#check_box_create"
+
+  get "list_box_index", to: "allowances#list_box_index"
+  post "list_box_create", to: "allowances#list_box_create"
 end
