@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_07_205819) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_07_220553) do
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -24,6 +24,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_07_205819) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "role_id", null: false
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
+    t.integer "failed_attempts", default: 0, null: false
+    t.string "unlock_token"
+    t.datetime "locked_at"
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token"
     t.index ["role_id"], name: "index_admins_on_role_id"
@@ -40,6 +48,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_07_205819) do
 
   create_table "permissions", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.float "price"
+    t.string "sku"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

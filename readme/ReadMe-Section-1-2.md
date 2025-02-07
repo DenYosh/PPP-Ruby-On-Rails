@@ -6,7 +6,7 @@
 
 # Sectie 1 | Installeren van Ruby
 
-## 1. Instaleren Ruby
+## 1. installeren Ruby
 
 Voor het installeren heb ik deze stappen gevolgd.
 
@@ -20,7 +20,7 @@ ruby -v
 
 # Sectie 2 | Installeren van Rails
 
-## 1. Instaleren Rails
+## 1. installeren Rails
 
 Na het installeren van Ruby heb ik Rails geïnstalleerd door deze stappen uit te voeren:
 

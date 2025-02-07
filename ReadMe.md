@@ -37,6 +37,23 @@ Hey! Dit is mijn repository waarin ik mijn leerproces tijdens het volgen van een
 -   🔎 [Filtering - 24](./readme/ReadMe-Section-24.md)
 -   ⚙️ [Callbacks on Model - 25](./readme/ReadMe-Section-25.md)
 
+### 📤 **Bestanden & Data**
+
+-   📂 [Data Export - 27](./readme/ReadMe-Section-27.md)
+-   📤 [Bestanden Uploaden - 28](./readme/ReadMe-Section-28.md)
+-   📈 [Grafieken & Statistieken - 29](./readme/ReadMe-Section-29.md)
+
+### 🔐 **Beveiliging & Toegang**
+
+-   🔐 [Sessions - 30 + 31](./readme/ReadMe-Section-30-31.md)
+-   🔑 [Authentication - 32](./readme/ReadMe-Section-32.md)
+-   🔒 [Authorization - 33](./readme/ReadMe-Section-33.md)
+-   🚫 [Locking accounts - 34](./readme/ReadMe-Section-34.md)
+
+### ⚡ **Processen & Taken**
+
+-   ⚡ [Active jobs - 35](./readme/ReadMe-Section-35.md)
+
 ---
 
 ## ⏳ WakaTime Statistieken

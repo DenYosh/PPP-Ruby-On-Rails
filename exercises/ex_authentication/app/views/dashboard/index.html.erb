@@ -7,7 +7,7 @@
         <%= link_to "Unlock Accounts", lock_accounts_path, class: 'btn btn-primary ml-4 mt-4' %>
     <% end %>
 
-    <% if admin_signed_in? && current_admin.staff_user? %>
+    <% if admin_signed_in? && current_admin.customer? %>
         <%= link_to "Products", products_path, class: 'btn btn-primary ml-4 mt-4' %>
     <% end %>
 

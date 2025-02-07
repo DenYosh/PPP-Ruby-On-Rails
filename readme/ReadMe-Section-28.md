@@ -4,7 +4,7 @@
 
 # Sectie 28 | Uploading Files
 
-## 1. Models en gems instaleren
+## 1. Models en gems installeren
 
 ```ps
 rails generate model employeeinfo firstname:string lastname:string
