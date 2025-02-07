@@ -4,11 +4,11 @@
 
 # 🚀 Mastering Ruby on Rails
 
-Welkom bij **Mastering Ruby on Rails**! Dit project bevat verschillende modules die je helpen Rails te beheersen. Hieronder vind je een overzicht van de documentatie.
+Hey! Dit is mijn repository waarin ik mijn leerproces tijdens het volgen van een **Ruby on Rails**-cursus heb bijgehouden. Hier kun je zien welke onderwerpen ik heb behandeld en wat ik allemaal heb geleerd.
 
 ---
 
-## 📚 Documentatie
+## 📚 Wat zit erin?
 
 ### 🔧 **Setup & Configuratie**
 
@@ -55,7 +55,7 @@ Hieronder het certificaat van het voltooien van deze cursus:
 
 ## 🎓 Credits
 
-Dit project is gebaseerd op de course van **[Kameswara Sarma Uppuluri](https://www.udemy.com/user/ksarma/)**.  
+Deze repo is gebaseerd op de course van **[Kameswara Sarma Uppuluri](https://www.udemy.com/user/ksarma/)**.  
 Veel dank voor de waardevolle kennis en inzichten!
 
 📌 **Check de course hier** 👉 [Klik hier](https://www.udemy.com/course/rubyonrails7)
