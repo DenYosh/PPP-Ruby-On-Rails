@@ -54,6 +54,11 @@ Hey! Dit is mijn repository waarin ik mijn leerproces tijdens het volgen van een
 
 -   ⚡ [Active jobs - 35](./readme/ReadMe-Section-35.md)
 
+### 🔄 **REST API Endpoints**
+
+-   📡 [Rest API - 36](./readme/ReadMe-Section-36.md)
+-   🚀 [API Integratie - 37](./readme/ReadMe-Section-37.md)
+
 ---
 
 ## ⏳ WakaTime Statistieken
@@ -68,7 +73,8 @@ Hieronder een overzicht van de tijd besteed aan dit project:
 
 Hieronder het certificaat van het voltooien van deze cursus:
 
-![Certificaat](./images/certificaat.png)
+![Certificaat](./images/certificaat.jpg)
+![Link naar Certificaat](https://www.udemy.com/certificate/UC-7892b830-4343-448c-b420-e59d5cdb7757/)
 
 ## 🎓 Credits
 

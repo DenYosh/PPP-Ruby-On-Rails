@@ -1,0 +1,189 @@
+
+<div>
+  <h1>Editing Employee | Yoshi Cooremans</h1>
+  <%= form_with url: consumerapi_path, method: :put, 
+  html: {class: "form-horizontal"} do |f| %>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          First Name:
+          <span class="star">*</span>
+        </label>
+        <div class="col-sm-10">
+          <%= f.text_field "employee[firstname]", 
+          value: @employee["firstname"] || params.dig(:employee, :firstname), 
+          placeholder: 'Enter First Name', class: 'form-control' %>        
+        </div>
+      </div>
+    </fieldset>
+
+      <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Last Name:
+          <span class="star">*</span>
+        </label>
+        <div class="col-sm-10">
+          <%= f.text_field "employee[lastname]", 
+          value: @employee["lastname"] || params.dig(:employee, :lastname), 
+          placeholder: 'Enter Last Name', class: 'form-control' %>        
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Has Passport:
+        </label>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <%= f.check_box "employee[haspassport]", 
+            checked: @employee["haspassport"] || params.dig(:employee, :haspassport), 
+            class: 'form-check-input' %>          
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Salary:
+        </label>
+        <div class="col-sm-10">
+          <%= f.text_field "employee[salary]", 
+          value: @employee["salary"] || params.dig(:employee, :salary), placeholder: 'Enter Salary', class: 'form-control' %>
+          
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Birth Date:
+        </label>
+        <div class="col-sm-10">
+          <%= f.date_field "employee[birthdate]", 
+          value: @employee["birthdate"] || params.dig(:employee, :birthdate), class: 'form-control' %>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Hiring Date:
+        </label>
+        <div class="col-sm-10">
+          <%= f.date_field "employee[hiredate]", value: @employee["hiredate"] || params.dig(:employee, :hiredate), class: 'form-control' %>        
+        </div>
+      </div>
+    </fieldset>
+
+      <fieldset>
+      <div class="form-group row">
+        <legend class="col-form-label col-sm-2 pt-0">Gender:</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <%= f.radio_button "employee[gender]", 'Male', 
+            checked: (@employee["gender"] == "Male" || params.dig(:employee, :gender) == "Male") ? true : false, 
+            data: { toggle: 'radio' }, class: 'form-check-input', id: 'male' %>
+            <label class="form-check-label" for="male">
+              Male
+            </label>  
+          </div>
+          <div class="form-check">
+            <%= f.radio_button "employee[gender]", 'Female', 
+            checked: (@employee["gender"] == "Female" || params.dig(:employee, :gender) == "Female") ? true : false, 
+            data: { toggle: 'radio' }, class: 'form-check-input', id: 'female' %>
+            <label class="form-check-label" for="female">
+              Female
+            </label>     
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Notes:
+        </label>
+        <div class="col-sm-10">
+          <%= f.text_area "employee[notes]", value: @employee["notes"] || params.dig(:employee, :notes), 
+          placeholder: 'Enter Notes', class: 'form-control' %>        
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Email:
+          <span class="star">*</span>
+        </label>
+        <div class="col-sm-10">
+          <%= f.email_field "employee[email]", 
+          value: @employee["email"] || params.dig(:employee, :email), 
+          autofocus: true, placeholder: 'Enter Email', class: 'form-control'  %>        
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Phone Number:
+          <span class="star">*</span>
+        </label>
+        <div class="col-sm-10">
+          <%= f.text_field "employee[phone]", 
+          value: @employee["phone"] || params.dig(:employee, :phone), 
+          autofocus: true, placeholder: 'Enter Phone Number', class: 'form-control' %>
+          
+        </div>
+      </div>
+    </fieldset>
+
+      <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Department:
+          <span class="star">*</span>
+        </label>
+        <div class="col-sm-10">
+          <% arrayForOptions = @departments.collect { |item|
+            [item['name'], item['id']]
+          }%>
+          <%= f.select "employee[department_id]", 
+          options_for_select(arrayForOptions,@employee["department_id"]),
+          { include_blank: "Select Department"}, class: 'form-control', autofocus: true %>        
+        </div>
+      </div>
+    </fieldset>
+
+    
+    <fieldset>
+      <div class="form-group row">
+        <label class="col-sm-2 control-label">
+          Country:
+          <span class="star">*</span>
+        </label>
+        <div class="col-sm-10">
+          <% arrayForOptions2 = @countries.collect { |item|
+            [item['name'], item['id']]
+          }%>
+          <%= f.select "employee[country_id]", 
+          options_for_select(arrayForOptions2,@employee["country_id"]), 
+          { include_blank: 'Select Country' }, class: 'form-control', autofocus: true %>        
+        </div>
+      </div>
+    </fieldset>
+
+      <%= f.submit 'Submit', class: "btn btn-primary" %>
+  <% end %>
+  <a href="<%= consumerapi_index_path %>" class="btn btn-primary">Back To List</a>
+</div>

@@ -1,0 +1,13 @@
+:queues:
+    - critical
+    - default
+    - mailers
+
+tasks: &tasks
+    UpdateUsersJob:
+        cron: "*/5 * * * *"
+        queue: default
+        description: "Update User profile"
+:scheduler:
+    :schedule:
+        <<: *tasks
