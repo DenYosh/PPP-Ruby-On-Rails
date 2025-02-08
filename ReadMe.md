@@ -74,7 +74,9 @@ Hieronder een overzicht van de tijd besteed aan dit project:
 Hieronder het certificaat van het voltooien van deze cursus:
 
 ![Certificaat](./images/certificaat.jpg)
-![Link naar Certificaat](https://www.udemy.com/certificate/UC-7892b830-4343-448c-b420-e59d5cdb7757/)
+
+Link naar certificaat:
+[📄 Certificaat](https://www.udemy.com/certificate/UC-7892b830-4343-448c-b420-e59d5cdb7757/)
 
 ## 🎓 Credits
 
